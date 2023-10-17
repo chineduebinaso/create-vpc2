@@ -40,7 +40,7 @@ resource "aws_iam_role" "demo" {
 
 # Declare the IAM role for EKS nodes
 resource "aws_iam_role" "nodes" {
-  name = "eks-nodes-demo"
+  name = "eks-node-group-nodes"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
